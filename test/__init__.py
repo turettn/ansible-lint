@@ -1,13 +1,12 @@
 """Test suite for ansible-lint."""
 
-import tempfile
-import shutil
 import os
+import shutil
+import tempfile
 
 from ansible import __version__ as ansible_version_str
 
 from ansiblelint.runner import Runner
-
 
 ANSIBLE_MAJOR_VERSION = tuple(map(int, ansible_version_str.split('.')[:2]))
 
